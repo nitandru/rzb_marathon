@@ -211,6 +211,8 @@ h2 span { color: var(--red); }
 .callout { display: grid; grid-template-columns: auto 1fr; gap: 18px; margin-top: 28px; padding: 18px; border-left: 4px solid var(--red); background: rgba(255, 255, 255, .42); }
 .callout > span { font-family: var(--mono); font-size: 11px; font-weight: 500; text-transform: uppercase; white-space: nowrap; }
 .callout p, .callout ul { margin: 0; font-size: 13px; line-height: 1.5; }
+.callout [data-i18n="raceNumberTip"] { grid-column: 2; }
+.callout.attention [data-i18n="tenKSectorAttention"] { grid-column: 2; text-align: left; }
 .callout.tip { border-color: var(--yellow); }
 .callout.attention, .callout.warning { border-color: var(--red); background: rgba(238, 75, 43, .11); }
 .during .callout.tip { color: var(--ink); background: var(--yellow); }
@@ -261,4 +263,6 @@ h2 span { color: var(--red); }
   .route-grid img { height: auto; max-height: 280px; }
   .route-grid iframe { height: 330px; }
   .callout { grid-template-columns: 1fr; gap: 10px; }
+  .callout.attention [data-i18n="tenKSectorAttention"] { grid-column: 1; }
+  .callout [data-i18n="raceNumberTip"] { grid-column: 1; }
 }
