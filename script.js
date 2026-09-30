@@ -5,6 +5,10 @@ const navGroups = [...document.querySelectorAll('.nav-group')];
 const romanian = new Map([...document.querySelectorAll('[data-i18n]')].map((element) => [element.dataset.i18n, element.innerHTML]));
 
 const english = {
+  whatsappSaturdayTip: 'To find us more easily and quickly on Saturday, I recommend joining the SCOR Running Bucharest WhatsApp group. The QR code is next to this message (I promise, we will not spam you).',
+  shirtNewsTitle: 'News! Custom SCOR shirts are here',
+  shirtTitle: 'The SCOR shirt',
+  shirtText: 'We confirm that we will have custom SCOR technical shirts. The shirts will be the same size as the one selected on the registration form. Please wear it at least for the group photo, and we hope you feel comfortable in it during the race as well.',
   tenKSectorAttention: 'The 10 km race is the <em>ONLY</em> one with a predefined starting section for each participant. Position yourself in the appropriate section, as indicated on your BIB.',
   raceNumberTip: 'On race day, remember to bring your race number with you. Your time will be recorded using it.',
   skip: 'Skip to content', menu: 'Open menu', navBefore: 'Before the race', navKit: 'Race kit pickup', navGear: 'Gear', navSchedule: 'Race schedule', navRoutes: 'Race routes', navImportant: 'Good to know', navDuring: 'During the race', navPace: 'Race pace', navPacers: 'Pacer teams', navHydration: 'Hydration points', navAfter: 'After the race', navResults: 'Results and finish', navEnd: 'Closing notes', navThanks: 'Final advice', navCta: 'View schedule <span aria-hidden="true">↗</span>',
